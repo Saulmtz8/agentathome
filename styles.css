@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Arya&family=Exo:wght@300&family=Oxygen&family=Telex&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #EFF1F3;
+}
+body{
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    display: flex;
+    align-items: center;
+}
+main{
+    height: 85vh;
+    width: 90%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    margin: 50px 50px;
+    border-radius: 25px;
+    box-shadow: 0 20px 50px rgba(0,0, 0, 0.15);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    overflow: scroll;
+
+}
+    /* Navbar */
+
+ main .navbar-light .nav-item .nav-link{
+    color: #EFF1F3;
+    font-family: 'Exo', sans-serif;
+    font-size: 1.1em;
+    margin: 0px 4px 0px 2px;
+    padding-top: 40px;
+}
+main .navbar-light .nav-item .nav-link:hover{
+    color:#ACACB3;
+}
+main .material-icons{
+    font-size: 36px;
+}
+.sign{
+    padding-top: 25px;
+}
+.sign .button{
+    color: #EFF1F3;
+    font-family: 'Exo', sans-serif;
+    font-size: 13px;
+}
+.sign .button:hover{
+    color:#ACACB3;
+}
+     /* Container */
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+
+}
+.container .text-content{
+   margin-bottom: 120px;
+   padding-left: 10px;
+}
+.container .text-content h1{
+    font-size: 45px;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.container .text-content p{
+    font-family: 'Arya', sans-serif;
+    font-size: 20px;
+}
+.container .agent img{
+    height: 450px;
+    width: auto;
+}
+/* Trabajos Contacto */
+.job{
+    padding: 85px 50px;
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    /* margin: 50px 50px; */
+    position: relative;
+}
+.job .call{
+    width: 100%;
+}
+.job .call img{
+    width: auto;
+    height: auto;
+    max-width: 700px;
+    max-height: 500px;
+    border-radius: 2rem;
+}
+.job .form{
+    margin-left: 30px;
+    border-radius: 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 20px 50px rgba(0,0, 0, 0.15);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 30px;
+    max-width: 450px;
+    max-height: 500px;
+    overflow: hidden;
+    font-size: 13px;
+}
+.job .form{
+    font-family: 'Telex', sans-serif;
+}
+
+.job .form h2 {
+    text-align: center;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 30px;
+}
+.job .form p{
+    text-align: center;
+    font-family: 'Arya', sans-serif;
+    font-size: 18px;
+}
+
+
+/* Mediaqueries */
+
+@media (max-width: 547px) {
+    .sign,
+    .navbar {
+      text-align: center;
+      padding: 0;
+    }
+    .container .agent{
+        display: none;
+    }
+
+    .job{
+        margin:unset;
+        padding: 30px;
+    }
+    .job .call{
+        display: none;
+        margin: unset;
+
+    }
+    .job .form{
+        max-width: 547px;
+        overflow: scroll;
+        position: relative;
+        margin-left: unset;
+    }
+}
